@@ -15,6 +15,10 @@ defmodule LogflareLogger do
     log(:warn, message, metadata)
   end
 
+  def warning(message, metadata \\ []) do
+    log(:warning, message, metadata)
+  end
+
   def error(message, metadata \\ []) do
     log(:error, message, metadata)
   end

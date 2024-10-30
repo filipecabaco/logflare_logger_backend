@@ -29,7 +29,7 @@ defmodule LogflareLoggerTest do
     :ok
   end
 
-  describe "debug, info, warn, error functions" do
+  describe "debug, info, warning, error functions" do
     test "uses same configuration as Logger functions" do
       allow(LogflareApiClient.new(any()), return: %Tesla.Client{})
 
